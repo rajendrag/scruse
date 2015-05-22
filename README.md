@@ -1,6 +1,7 @@
 restR
 ===========
-**This project is still under early development stage**
+**Note: This project is still under early development stage**
+
 **restR provides an easy way integrate R scripts into any application**
 * Create projects and upload R scripts into project
 * Automatic copying to all available R servers
@@ -38,4 +39,5 @@ This should fetch all the dependencies and start a Web Server listening on *loca
 Note: This will create a MongoDB Collection for you automatically, a freebie from the Driver!
 
 **To Debug**
+
 ```activator -jvm-debug 9999```
