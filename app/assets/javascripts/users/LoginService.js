@@ -20,16 +20,16 @@
 
     LoginService.prototype.login = function(login) {
       var deferred;
-      this.$log.debug("updateUser " + (angular.toJson(login, true)));
+      this.$log.debug("Login User " + (angular.toJson(login, true)));
       deferred = this.$q.defer();
-      this.$http.put("/login", login).success((function(_this) {
+      this.$http.post("/login", login).success((function(_this) {
         return function(data, status, headers) {
-          _this.$log.info("Successfully updated User - status " + status);
+          _this.$log.info("Successfully LoggedIn - status " + status);
           return deferred.resolve(data);
         };
       })(this)).error((function(_this) {
         return function(data, status, header) {
-          _this.$log.error("Failed to update user - status " + status);
+          _this.$log.error("Failed to login user - status " + status);
           return deferred.reject(data);
         };
       })(this));

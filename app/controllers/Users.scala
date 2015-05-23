@@ -94,12 +94,14 @@ class Users extends Controller with MongoController {
     }
   }
 
-  def checkLogin = Action {
-    println("Successfully logged in")
-    Ok(views.html.index())
-
+  def login = Action { implicit request => {
+    logger.debug(request.body.toString());
+    val email = request.getQueryString("email");
+    val pwd = request.getQueryString("pwd");
+    logger.debug(s"email: $email pwd : $pwd")
+    Ok("Successful login!!")
   }
-
+  }
 
 
 
