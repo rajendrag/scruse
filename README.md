@@ -1,12 +1,13 @@
-restR
-===========
+scruse (Remote Script Runner Server)
+=============================
 **Note: This project is still under early development stage**
 
-**restR provides an easy way integrate R scripts into any application**
-* Create projects and upload R scripts into project
-* Automatic copying to all available R servers
-* Easier RestAPI to execute R scripts
-* JSON is the preferred way of exchanging information between R and application 
+**scruse provides an easy way integrate scripts (R, Python and others) into any application**
+* Create projects and upload scripts into project
+* Configure multiple script running servers 
+* Automatic copying to all available script running servers
+* Easier RestAPI to execute scripts
+* JSON is the preferred way of exchanging information between script and application 
 
 
 Getting Started
@@ -19,10 +20,10 @@ Your development environment will require:
 Once the prerequisites have been installed, you will be able to execute the following from a terminal.
 
 ```
-../restR$ activator run
-  [info] Loading project definition from /home/rp/git/restR/project
-  [info] Set current project to restR (in build file:/home/rp/git/restR/)
-  [info] Updating {file:/home/rp/git/restR/}root...
+../scruse$ activator run
+  [info] Loading project definition from /home/rp/git/scruse/project
+  [info] Set current project to scruse (in build file:/home/rp/git/scruse/)
+  [info] Updating {file:/home/rp/git/scruse/}root...
   [info] Resolving jline#jline;2.12 ...
   [info] Done updating.
   
