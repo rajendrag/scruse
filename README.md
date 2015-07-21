@@ -42,3 +42,6 @@ Note: This will create a MongoDB Collection for you automatically, a freebie fro
 **To Debug**
 
 ```activator -jvm-debug 9999```
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/rajendrag/scruse/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
